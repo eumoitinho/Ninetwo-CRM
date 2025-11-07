@@ -1,0 +1,12 @@
+2025-11-02 07:16:58,451 ERROR frappe New Exception collected in error log
+Site: crm.localhost
+Form Dict: {'args': '{"currency":"BRL","country":"Brazil","timezone":"America/Araguaina","language":"English","full_name":"João Vitor Moitinho","email":"contato@moitinho.dev","password":"00Moitinho@,,"}', 'cmd': 'frappe.desk.page.setup_wizard.setup_wizard.setup_complete'}
+2025-11-02 07:17:09,206 ERROR frappe New Exception collected in error log
+Site: crm.localhost
+Form Dict: {'args': '{"currency":"BRL","country":"Brazil","timezone":"America/Araguaina","language":"English","full_name":"João Vitor Moitinho","email":"contato@moitinho.dev","password":"00Moitinho@,,"}', 'cmd': 'frappe.desk.page.setup_wizard.setup_wizard.setup_complete'}
+2025-11-02 10:10:55,342 ERROR frappe New Exception collected in error log
+Site: crm.localhost
+Form Dict: {'cmd': 'frappe.integrations.google_oauth.callback'}
+2025-11-02 10:20:26,548 ERROR frappe New Exception collected in error log
+Site: crm.localhost
+Form Dict: {'cmd': 'frappe.integrations.google_oauth.callback'}

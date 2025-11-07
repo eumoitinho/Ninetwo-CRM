@@ -1,0 +1,72 @@
+2025-11-02 06:07:44,440 ERROR frappe Could not take error snapshot: 'NoneType' object has no attribute 'get'
+Site: insights.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/app.py", line 173, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/__init__.py", line 258, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/__init__.py", line 1670, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/__init__.py", line 1518, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/__init__.py", line 1483, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/__init__.py", line 1513, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/__init__.py", line 1454, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'insights'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/__init__.py", line 1308, in get_doc
+    return frappe.model.document.get_doc(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/model/base_document.py", line 96, in import_controller
+    module = load_doctype_module(doctype, module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/modules/utils.py", line 249, in load_doctype_module
+    app = get_module_app(module)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/apps/frappe/frappe/modules/utils.py", line 272, in get_module_app
+    app = frappe.local.module_app.get(scrub(module))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-11-02 07:16:58,451 ERROR frappe New Exception collected in error log
+Site: crm.localhost
+Form Dict: {'args': '{"currency":"BRL","country":"Brazil","timezone":"America/Araguaina","language":"English","full_name":"João Vitor Moitinho","email":"contato@moitinho.dev","password":"00Moitinho@,,"}', 'cmd': 'frappe.desk.page.setup_wizard.setup_wizard.setup_complete'}
+2025-11-02 07:17:09,206 ERROR frappe New Exception collected in error log
+Site: crm.localhost
+Form Dict: {'args': '{"currency":"BRL","country":"Brazil","timezone":"America/Araguaina","language":"English","full_name":"João Vitor Moitinho","email":"contato@moitinho.dev","password":"00Moitinho@,,"}', 'cmd': 'frappe.desk.page.setup_wizard.setup_wizard.setup_complete'}
+2025-11-02 10:10:55,342 ERROR frappe New Exception collected in error log
+Site: crm.localhost
+Form Dict: {'cmd': 'frappe.integrations.google_oauth.callback'}
+2025-11-02 10:20:26,548 ERROR frappe New Exception collected in error log
+Site: crm.localhost
+Form Dict: {'cmd': 'frappe.integrations.google_oauth.callback'}

@@ -1,0 +1,23 @@
+2025-11-02 06:07:08,727 WARNING database DDL Query made to DB:
+create table `tabInsights Chart` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`query` varchar(140),
+`chart_type` varchar(140),
+`options` json default '{}',
+`is_public` int(1) not null default 0,
+`public_key` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
