@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # Main API service
+  api:
+    build: .
+    container_name: google-crm-api
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - crm-network
+    volumes:
+      - ./app:/app/app  # For development hot-reload
+
+  # Celery worker for background tasks
+  worker:
+    build: .
+    container_name: google-crm-worker
+    command: celery -A app.workers.celery_app worker --loglevel=info
+    env_file:
+      - .env
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - crm-network
+
+  # Celery beat scheduler
+  beat:
+    build: .
+    container_name: google-crm-beat
+    command: celery -A app.workers.celery_app beat --loglevel=info
+    env_file:
+      - .env
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - crm-network
+
+  # Redis for caching and Celery broker
+  redis:
+    image: redis:7-alpine
+    container_name: google-crm-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    networks:
+      - crm-network
+    volumes:
+      - redis-data:/data
+
+networks:
+  crm-network:
+    driver: bridge
+
+volumes:
+  redis-data:
