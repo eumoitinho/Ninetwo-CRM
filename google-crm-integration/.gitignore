@@ -45,3 +45,8 @@ htmlcov/
 # Secrets
 credentials.json
 client_secret.json
+
+# Frappe Bench (submodules and logs)
+frappe-bench/logs/
+frappe-bench/sites/*/logs/
+frappe-bench/**/*.log*
