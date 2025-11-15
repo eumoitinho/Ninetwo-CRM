@@ -5,6 +5,11 @@ frappe-bench/logs/
 frappe-bench/sites/*/logs/
 frappe-bench/**/*.log*
 
+# Frappe Bench Apps (repositórios Git independentes, não submodules)
+frappe-bench/apps/crm/
+frappe-bench/apps/frappe/
+frappe-bench/apps/insights/
+
 # Python
 __pycache__/
 *.py[cod]
