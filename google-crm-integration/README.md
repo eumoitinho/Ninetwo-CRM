@@ -352,16 +352,143 @@ pytest --cov=app --cov-report=html
 
 ## 🚀 Deploy em Produção
 
-### Variáveis de Ambiente de Produção
+### Deploy na Railway (Recomendado)
 
-```env
-APP_ENV=production
-DEBUG=False
-SECRET_KEY=<gere-uma-chave-forte-aqui>
-GOOGLE_REDIRECT_URI=https://seu-dominio.com/auth/google/callback
-```
+A Railway é uma plataforma de deploy simplificada que suporta Docker e oferece deploy automático a partir do GitHub.
 
-### Docker Compose para Produção
+#### Pré-requisitos
+
+1. Conta na [Railway](https://railway.app)
+2. Repositório GitHub com o código do projeto
+3. Todas as credenciais necessárias (Google Cloud, Couchbase, Confluent, etc.)
+
+#### Passo a Passo
+
+1. **Criar Projeto na Railway**
+   - Acesse https://railway.app
+   - Clique em "New Project"
+   - Selecione "Deploy from GitHub repo"
+   - Conecte seu repositório GitHub
+   - Selecione o repositório `google-crm-integration`
+
+2. **Configurar Variáveis de Ambiente**
+   - No dashboard do projeto Railway, vá em "Variables"
+   - Adicione todas as variáveis de ambiente necessárias:
+
+   ```env
+   # Application Settings
+   APP_ENV=production
+   APP_NAME=Google CRM Integration
+   APP_HOST=0.0.0.0
+   DEBUG=False
+   SECRET_KEY=<gere-uma-chave-forte-aqui>
+   
+   # Google OAuth Configuration
+   GOOGLE_CLIENT_ID=<seu-google-client-id>
+   GOOGLE_CLIENT_SECRET=<seu-google-client-secret>
+   GOOGLE_REDIRECT_URI=https://seu-app.railway.app/auth/google/callback
+   
+   # Google Ads API
+   GOOGLE_ADS_DEVELOPER_TOKEN=<seu-developer-token>
+   GOOGLE_ADS_CLIENT_ID=<seu-ads-client-id>
+   GOOGLE_ADS_CLIENT_SECRET=<seu-ads-client-secret>
+   GOOGLE_ADS_LOGIN_CUSTOMER_ID=<seu-customer-id>
+   
+   # Google Analytics API
+   GOOGLE_ANALYTICS_PROPERTY_ID=<seu-property-id>
+   
+   # Couchbase Cloud Configuration
+   COUCHBASE_CONNECTION_STRING=<sua-connection-string>
+   COUCHBASE_USERNAME=<seu-username>
+   COUCHBASE_PASSWORD=<sua-senha>
+   COUCHBASE_BUCKET_NAME=crm-data
+   COUCHBASE_SCOPE_NAME=crm
+   
+   # Confluent Kafka Configuration
+   KAFKA_BOOTSTRAP_SERVERS=<seus-bootstrap-servers>
+   KAFKA_SASL_USERNAME=<sua-api-key>
+   KAFKA_SASL_PASSWORD=<sua-api-secret>
+   KAFKA_SECURITY_PROTOCOL=SASL_SSL
+   KAFKA_SASL_MECHANISM=PLAIN
+   
+   # Redis Configuration (Railway pode provisionar Redis)
+   REDIS_URL=<redis-url-da-railway-ou-externa>
+   CELERY_BROKER_URL=<redis-url>/1
+   CELERY_RESULT_BACKEND=<redis-url>/2
+   
+   # Sync Settings
+   SYNC_INTERVAL_MINUTES=15
+   SYNC_DAYS_LOOKBACK=30
+   ```
+
+   **Nota:** A Railway fornece automaticamente a variável `PORT` - não é necessário configurá-la manualmente.
+
+3. **Configurar Redis (Opcional)**
+   - Railway oferece Redis como addon
+   - No dashboard, clique em "New" > "Database" > "Redis"
+   - Railway configurará automaticamente a variável `REDIS_URL`
+   - Use essa URL nas variáveis `CELERY_BROKER_URL` e `CELERY_RESULT_BACKEND`
+
+4. **Configurar Domínio**
+   - No dashboard, vá em "Settings" > "Networking"
+   - Clique em "Generate Domain" para obter um domínio público
+   - Ou configure um domínio customizado em "Custom Domain"
+   - **Importante:** Atualize `GOOGLE_REDIRECT_URI` com o domínio gerado
+
+5. **Configurar Google OAuth Redirect URI**
+   - No [Google Cloud Console](https://console.cloud.google.com)
+   - Vá em "APIs & Services" > "Credentials"
+   - Edite seu OAuth Client ID
+   - Adicione a URL de callback da Railway:
+     - `https://seu-app.railway.app/auth/google/callback`
+   - Salve as alterações
+
+6. **Deploy**
+   - Railway detectará automaticamente o `Dockerfile` e fará o build
+   - O deploy será feito automaticamente a cada push no repositório
+   - Acompanhe o processo em "Deployments"
+
+7. **Verificar Deploy**
+   - Após o deploy, acesse `https://seu-app.railway.app/health`
+   - Verifique os logs em "Deployments" > "View Logs"
+
+#### Configuração de Health Check
+
+A Railway utiliza automaticamente o endpoint `/health` para health checks. Certifique-se de que o endpoint está funcionando corretamente.
+
+#### Worker e Beat (Celery)
+
+Para executar workers Celery e o beat scheduler na Railway:
+
+1. **Opção 1: Serviços Separados (Recomendado)**
+   - Crie 3 serviços separados no mesmo projeto Railway:
+     - **API:** Deploy do Dockerfile padrão (API FastAPI)
+     - **Worker:** Deploy do mesmo Dockerfile com comando: `celery -A app.workers.celery_app worker --loglevel=info`
+     - **Beat:** Deploy do mesmo Dockerfile com comando: `celery -A app.workers.celery_app beat --loglevel=info`
+
+2. **Opção 2: Usar Procfile**
+   - Crie um arquivo `Procfile` na raiz do projeto:
+   ```
+   web: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+   worker: celery -A app.workers.celery_app worker --loglevel=info
+   beat: celery -A app.workers.celery_app beat --loglevel=info
+   ```
+   - Configure Railway para usar o Procfile (requer buildpack)
+
+#### Monitoramento
+
+- **Logs:** Acesse "Deployments" > "View Logs" no dashboard Railway
+- **Métricas:** Railway fornece métricas básicas de CPU, memória e rede
+- **Health Checks:** Railway monitora automaticamente o endpoint `/health`
+
+#### Troubleshooting
+
+- **Erro de conexão com Couchbase/Kafka:** Verifique se as URLs de conexão estão corretas e se os serviços estão acessíveis publicamente
+- **Erro de porta:** Railway fornece `PORT` automaticamente - não defina manualmente
+- **Build falhando:** Verifique os logs de build em "Deployments"
+- **Timeout na inicialização:** Verifique se os serviços externos (Couchbase, Kafka) estão acessíveis
+
+### Docker Compose para Produção (Alternativa)
 
 ```bash
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d

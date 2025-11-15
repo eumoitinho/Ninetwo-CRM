@@ -119,3 +119,58 @@
 2025-11-06 12:00:01,453 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
 2025-11-06 18:00:01,945 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
 2025-11-07 00:00:01,260 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-07 09:53:57,275 INFO /Users/eumoitinho/.cache/uv/archive-v0/OsiuOYshIEwLSiixBitB4/bin/bench start
+2025-11-07 09:53:57,928 INFO /Users/eumoitinho/.cache/uv/archive-v0/OsiuOYshIEwLSiixBitB4/bin/bench watch
+2025-11-07 09:53:57,935 INFO /Users/eumoitinho/.cache/uv/archive-v0/OsiuOYshIEwLSiixBitB4/bin/bench serve --port 8000
+2025-11-07 09:53:57,936 INFO /Users/eumoitinho/.cache/uv/archive-v0/OsiuOYshIEwLSiixBitB4/bin/bench worker
+2025-11-07 09:53:57,949 INFO /Users/eumoitinho/.cache/uv/archive-v0/OsiuOYshIEwLSiixBitB4/bin/bench schedule
+2025-11-07 12:00:00,791 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-07 18:00:01,561 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-08 06:00:01,940 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-08 18:00:01,120 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-09 00:00:01,131 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-09 06:00:01,058 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-09 12:00:01,135 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-09 18:00:01,447 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-10 12:00:00,958 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-10 18:00:01,684 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-11 00:00:01,606 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-11 06:00:01,266 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-11 12:00:03,283 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-11 18:00:00,941 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-12 00:00:01,267 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-12 06:00:01,432 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-12 12:00:01,932 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-12 18:00:00,737 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-13 00:00:01,120 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-13 06:00:00,743 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-13 12:00:01,399 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-13 15:28:50,904 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench start
+2025-11-13 15:28:51,576 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench serve --port 8000
+2025-11-13 15:28:51,580 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench watch
+2025-11-13 15:28:51,581 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench schedule
+2025-11-13 15:28:51,596 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench worker
+2025-11-13 15:30:52,585 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench start
+2025-11-13 15:30:53,002 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench watch
+2025-11-13 15:30:53,008 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench serve --port 8000
+2025-11-13 15:30:53,009 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench schedule
+2025-11-13 15:30:53,015 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench worker
+2025-11-13 15:39:51,777 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench start
+2025-11-13 15:39:52,339 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench serve --port 8000
+2025-11-13 15:39:52,341 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench watch
+2025-11-13 15:39:52,367 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench worker
+2025-11-13 15:39:52,368 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench schedule
+2025-11-13 18:00:01,972 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-13 20:04:21,045 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench start
+2025-11-13 20:04:21,331 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench worker
+2025-11-13 20:04:21,332 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench watch
+2025-11-13 20:04:21,338 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench schedule
+2025-11-13 20:04:21,339 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench serve --port 8000
+2025-11-14 00:00:01,518 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-14 06:00:01,371 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-14 12:00:00,862 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup
+2025-11-14 17:10:15,363 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench start
+2025-11-14 17:10:31,770 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench stop
+2025-11-14 17:10:39,397 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench start
+2025-11-14 17:12:04,211 INFO /Users/eumoitinho/.cache/uv/archive-v0/aU7XFhACiG14XXen-LLog/bin/bench stop
+2025-11-14 18:00:00,775 INFO /Users/eumoitinho/.cache/uv/archive-v0/rgmJ176shK3ZMTbRHDuVZ/bin/bench --verbose --site all backup

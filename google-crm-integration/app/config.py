@@ -5,9 +5,10 @@ Centralized configuration management using Pydantic Settings.
 All settings are loaded from environment variables.
 """
 
+import os
 from typing import Optional
-from pydantic_settings import BaseSettings
-from pydantic import Field
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import Field, model_validator
 
 
 class Settings(BaseSettings):
@@ -17,9 +18,19 @@ class Settings(BaseSettings):
     app_name: str = Field(default="Google CRM Integration", alias="APP_NAME")
     app_env: str = Field(default="development", alias="APP_ENV")
     app_host: str = Field(default="0.0.0.0", alias="APP_HOST")
-    app_port: int = Field(default=8080, alias="APP_PORT")
+    # Railway provides PORT, fallback to APP_PORT or 8080
+    app_port: int = Field(default=8080)
     debug: bool = Field(default=True, alias="DEBUG")
     secret_key: str = Field(..., alias="SECRET_KEY")
+
+    @model_validator(mode='after')
+    def get_port(self):
+        """Get PORT from Railway or APP_PORT, fallback to default"""
+        # Railway provides PORT, check it first
+        port = os.getenv('PORT') or os.getenv('APP_PORT')
+        if port:
+            self.app_port = int(port)
+        return self
 
     # Google OAuth Configuration
     google_client_id: str = Field(..., alias="GOOGLE_CLIENT_ID")
@@ -68,9 +79,11 @@ class Settings(BaseSettings):
     sync_interval_minutes: int = Field(default=15, alias="SYNC_INTERVAL_MINUTES")
     sync_days_lookback: int = Field(default=30, alias="SYNC_DAYS_LOOKBACK")
 
-    class Config:
-        env_file = ".env"
-        case_sensitive = False
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        case_sensitive=False,
+        extra="ignore"
+    )
 
 
 # Global settings instance
