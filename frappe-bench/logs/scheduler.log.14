@@ -1,4 +1,4 @@
-2025-11-14 19:45:26,873 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:09:34,714 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -54,7 +54,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:46:27,515 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:10:35,108 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -110,7 +110,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:47:27,798 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:11:35,416 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -166,7 +166,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:48:28,246 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:12:35,737 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -222,7 +222,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:49:28,385 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:13:36,127 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -278,7 +278,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:50:28,804 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:14:36,441 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -334,7 +334,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:51:29,168 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:15:36,553 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -390,7 +390,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:52:29,396 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:16:36,946 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -446,7 +446,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:53:29,831 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:17:37,288 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -502,7 +502,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:54:30,361 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:18:37,473 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -558,7 +558,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:55:30,812 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:19:37,657 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -614,7 +614,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:56:31,140 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:20:37,952 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -670,7 +670,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:57:31,221 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:21:38,180 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -726,7 +726,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:58:31,493 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:22:38,446 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -782,7 +782,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 19:59:31,865 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:23:38,703 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -838,7 +838,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:00:32,231 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:24:38,958 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -894,7 +894,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:01:32,566 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:25:39,141 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -950,7 +950,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:02:32,782 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:26:39,475 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -1006,7 +1006,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:03:33,010 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:27:39,757 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -1062,7 +1062,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:04:33,452 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:28:39,982 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -1118,7 +1118,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:05:33,558 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:29:40,250 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -1174,7 +1174,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:06:33,982 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:30:40,569 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -1230,7 +1230,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:07:34,227 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:31:41,760 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -1286,7 +1286,7 @@ Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:11000. Connection refused.
-2025-11-14 20:08:34,424 ERROR scheduler Exception in Enqueue Events for Site insights.localhost
+2025-11-14 20:32:42,139 ERROR scheduler Exception in Enqueue Events for Site crm.localhost
 Traceback (most recent call last):
   File "/Users/eumoitinho/Work/Interno/Ninetwo-CRM/frappe-bench/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
