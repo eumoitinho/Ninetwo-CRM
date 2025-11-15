@@ -1,0 +1,43 @@
+# Files and directories to ignore during Railway build
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv
+
+# Logs
+*.log
+logs/
+sites/*/logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frappe specific
+sites/*/private/
+sites/*/public/files/
+sites/*/locks/
+sites/*/indexes/
+
+# Node modules (will be installed during build)
+node_modules/
+
+# Build artifacts
+sites/assets/
+
